@@ -1,0 +1,36 @@
+{
+  "name": "js-developer-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "config": {
+    "NODE_ENV": "development",
+    "PORT": 3000
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development PORT=3000 nodemon index --watch index.js --watch api"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PointCareLLC/js-developer-project.git"
+  },
+  "author": "Eric Zingeler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PointCareLLC/js-developer-project/issues"
+  },
+  "homepage": "https://github.com/PointCareLLC/js-developer-project#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "next": "^4.0.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "cross-env": "^5.0.5",
+    "eslint": "^4.8.0",
+    "eslint-plugin-react": "^7.4.0",
+    "prettier-eslint-cli": "^4.4.0"
+  }
+}
