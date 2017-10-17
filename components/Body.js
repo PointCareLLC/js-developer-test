@@ -3,17 +3,17 @@ import React from 'react';
 export default class Body extends React.Component {
   constructor(props) {
     super(props);
-    this.fetchContacts = this.fetchContacts.bind(this);
+    this.fetchManifest = this.fetchManifest.bind(this);
   }
 
   componentDidMount() {
-    this.fetchContacts();
+    this.fetchManifest();
   }
 
-  async fetchContacts() {
+  async fetchManifest() {
     const res = await fetch('/api/manifest');
-    const contacts = await res.json();
-    this.setState({ contacts });
+    const manifest = await res.json();
+    this.setState({ manifest });
   }
 
   render() {
