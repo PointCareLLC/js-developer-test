@@ -53,10 +53,10 @@ The **back-end** is Express 4. Nothing special going here.
 
   Let's pretend that our manifest is always changing; that being said, we need to be able to pull in a new list on demand. Create a button on the page that will get & load a fresh manifest from your api.
 
-- [ ] **Keep out the bad guys**
-
-  We want to keep our users safe otherwise they will not trust us and our application. See if you can prevent a CSRF attack on your shiny new application.
-
 - [ ] **Ford Pinto or Ferrari F60**
 
   Show us some style! Jazz up this manifest by adding some CSS.
+
+- [ ] **Keep out the bad guys**
+
+  We want to keep our users safe otherwise they will not trust us and our application. See if you can prevent a CSRF attack on your shiny new application. **Hint:** This can be accomplished without touching the client code.
