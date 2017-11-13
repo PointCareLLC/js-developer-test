@@ -33,7 +33,7 @@ The **back-end** is Express 4. Nothing special going here.
 
 ## Requirements
 
-- [ ] **Get manifest API**
+- [x] **Get manifest API**
 
   We need to serve the data to our React client; we'll use Express for that. The `./api` folder should have everything you need to make it work. Use `./api/manifest.json` as your data source.
 
