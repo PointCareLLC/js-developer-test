@@ -35,8 +35,8 @@ export default class Body extends React.Component {
     )
   }
 
-  loading() {
-    return <div>Loading</div>
+  loading(isLoading) {
+    return isLoading ? <button disabled>Loading</button> : <button onClick={this.fetchManifest}>Refresh</button>
   }
 
   render() {
@@ -44,7 +44,8 @@ export default class Body extends React.Component {
 
     return (
       <div className="manifestList">
-        { isLoading ? this.loading() : this.displayList(manifest) }
+        { this.loading(isLoading) }
+        { this.displayList(manifest) }
       </div>
     )
   }

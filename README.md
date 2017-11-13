@@ -49,7 +49,7 @@ The **back-end** is Express 4. Nothing special going here.
 
   Your React entry point is the `./components/Body.js` file. When the app is running, goto `http://localhost:3000` to see it renderd.
 
-- [ ] **Refresh manifest**
+- [x] **Refresh manifest**
 
   Let's pretend that our manifest is always changing; that being said, we need to be able to pull in a new list on demand. Create a button on the page that will get & load a fresh manifest from your api.
 
