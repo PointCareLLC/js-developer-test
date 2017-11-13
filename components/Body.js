@@ -19,20 +19,18 @@ export default class Body extends React.Component {
   }
 
   displayList = (list) => {
-    return <ol className='list'>{
-      list.map(item => {
-        return this.listItem(item)
-      })
+    return <ol className="list">{
+      list.map(item => this.listItem(item))
     }</ol>
   }
 
-  listItem = item => {
+  listItem = (item) => {
     return (
-      <li key={item.id} className='item'>
-        <div className='make'>{item.make}</div>
-        <div className='model'>{item.model}</div>
-        <div className='color'>{item.color}</div>
-        <div className='enteredAt'>{item.enteredAt}</div>
+      <li key={item.id} className="item">
+        <div className="make">{item.make}</div>
+        <div className="model">{item.model}</div>
+        <div className="color">{item.color}</div>
+        <div className="enteredAt">{item.enteredAt}</div>
       </li>
     )
   }
@@ -44,6 +42,10 @@ export default class Body extends React.Component {
   render() {
     const { isLoading, manifest } = this.state;
 
-    return isLoading ? this.loading() : this.displayList(manifest);
+    return (
+      <div className="manifestList">
+        { isLoading ? this.loading() : this.displayList(manifest) }
+      </div>
+    )
   }
 }
