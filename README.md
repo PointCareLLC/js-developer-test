@@ -43,7 +43,7 @@ The **back-end** is Express 4. Nothing special going here.
 
   payload: JSON Array
 
-- [ ] **Display manifest**
+- [x] **Display manifest**
 
   Now that we have an API, let's do something with it. In React, fetch the manifest from the API and display it in a list or table element. For each car in the parking lot, I want to see the make, model, color, and when they entered.
 
