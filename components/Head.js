@@ -36,6 +36,11 @@ const PageHead = ({ title }) => (
           'Helvetica Neue', sans-serif;
         text-rendering: optimizeLegibility;
       }
+      ol li div {
+        width: 25%;
+        max-width: 25%;
+        display: inline-block;
+      }
     `}</style>
   </div>
 );
