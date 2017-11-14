@@ -19,9 +19,9 @@ export default class Body extends React.Component {
   }
 
   displayList = (list) => {
-    return <ol className="list">{
+    return <ul className="list">{
       list.map(item => this.listItem(item))
-    }</ol>
+    }</ul>
   }
 
   listItem = (item) => {
