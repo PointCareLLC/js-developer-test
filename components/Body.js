@@ -1,4 +1,6 @@
 import React from 'react';
+import Moment from 'react-moment';
+import getSwatchColor from '../utils/colors';
 
 export default class Body extends React.Component {
   constructor(props) {
@@ -19,18 +21,24 @@ export default class Body extends React.Component {
   }
 
   displayList = (list) => {
-    return <ol className="list">{
+    return <ul className="list">{
       list.map(item => this.listItem(item))
-    }</ol>
+    }</ul>
   }
 
   listItem = (item) => {
+    const { id, make, model, color, enteredAt } = item;
+    const swatch = getSwatchColor(color.toLowerCase());
+
     return (
-      <li key={item.id} className="item">
-        <div className="make">{item.make}</div>
-        <div className="model">{item.model}</div>
-        <div className="color">{item.color}</div>
-        <div className="enteredAt">{item.enteredAt}</div>
+      <li key={id} className="item">
+        <div className="make" title={make}>{make}</div>
+        <div className="model" title={model}>{model}</div>
+        <div className="color" title={color}>{color}</div>
+        <div className="swatch" title={color}>
+          <div className="square" style={{background: swatch}} />
+        </div>
+        <div className="enteredAt" title={enteredAt}><Moment fromNow>{enteredAt}</Moment></div>
       </li>
     )
   }
@@ -43,7 +51,7 @@ export default class Body extends React.Component {
     const { isLoading, manifest } = this.state;
 
     return (
-      <div className="manifestList">
+      <div>
         { this.loading(isLoading) }
         { this.displayList(manifest) }
       </div>

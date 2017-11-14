@@ -35,10 +35,77 @@ const PageHead = ({ title }) => (
           'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
           'Helvetica Neue', sans-serif;
         text-rendering: optimizeLegibility;
+        min-width: 480px;
       }
-      ol li div {
-        width: 25%;
-        max-width: 25%;
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        box-sizing: border-box;
+        padding: 15px 5%;
+        transform-origin: 50% 50%;
+        cursor: pointer;
+      }
+
+      .list {
+        list-style: none;
+      }
+
+      .list li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 4px solid lightgray;
+        color: darkseagreen;
+        opacity: 0.9;
+        transition: background 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+      }
+      .list li:hover {
+        background: transparent;
+        border-color: black;
+        color: black;
+        box-shadow: none;
+        opacity: 1;
+      }
+
+      ul li div {
+        display: inline-block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      ul li .make {
+        width: 30%;
+        max-width: 30%;
+        display: inline-block;
+        font-weight: bold;
+      }
+      ul li .model {
+        width: 30%;
+        max-width: 30%;
+        display: inline-block;
+      }
+      ul li .color {
+        width: 15%;
+        max-width: 15%;
+        display: inline-block;
+      }
+      ul li .swatch {
+        width: 10%;
+        max-width: 10%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      ul li .swatch .square {
+        width: 30px;
+        height: 30px;
+      }
+      ul li .enteredAt {
+        width: 15%;
+        max-width: 15%;
         display: inline-block;
       }
     `}</style>
