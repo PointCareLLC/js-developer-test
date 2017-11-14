@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/PointCareLLC/js-developer-project#readme",
   "dependencies": {
+    "csurf": "^1.9.0",
     "express": "^4.16.2",
     "next": "^4.0.1",
     "prop-types": "^15.6.0",
