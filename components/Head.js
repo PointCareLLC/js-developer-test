@@ -45,7 +45,6 @@ const PageHead = ({ title }) => (
       li {
         box-sizing: border-box;
         padding: 15px 5%;
-        transform-origin: 50% 50%;
         cursor: pointer;
       }
 
@@ -62,7 +61,13 @@ const PageHead = ({ title }) => (
         opacity: 0.9;
         transition: background 0.3s ease, color 0.3s ease, opacity 0.3s ease;
       }
-      .list li:hover {
+      .list li.list-header {
+        border-left: 4px solid black;
+        color: black;
+        opacity: 1;
+        font-weight: bold;
+      }
+      .list li.item:hover {
         background: transparent;
         border-color: black;
         color: black;
