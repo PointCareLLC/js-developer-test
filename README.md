@@ -53,7 +53,7 @@ The **back-end** is Express 4. Nothing special going here.
 
   Let's pretend that our manifest is always changing; that being said, we need to be able to pull in a new list on demand. Create a button on the page that will get & load a fresh manifest from your api.
 
-- [ ] **Ford Pinto or Ferrari F60**
+- [x] **Ford Pinto or Ferrari F60**
 
   Show us some style! Jazz up this manifest by adding some CSS.
 
