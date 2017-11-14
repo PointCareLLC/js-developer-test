@@ -35,7 +35,7 @@ const PageHead = ({ title }) => (
           'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
           'Helvetica Neue', sans-serif;
         text-rendering: optimizeLegibility;
-        min-width: 320px;
+        min-width: 480px;
       }
 
       ul {
@@ -46,6 +46,7 @@ const PageHead = ({ title }) => (
         box-sizing: border-box;
         padding: 15px 5%;
         transform-origin: 50% 50%;
+        cursor: pointer;
       }
 
       .list {
@@ -53,16 +54,20 @@ const PageHead = ({ title }) => (
       }
 
       .list li {
-        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-left: 4px solid lightgray;
         color: darkseagreen;
-        transition: background 0.3s ease, color 0.3s ease;
+        opacity: 0.9;
+        transition: background 0.3s ease, color 0.3s ease, opacity 0.3s ease;
       }
       .list li:hover {
         background: transparent;
         border-color: black;
         color: black;
         box-shadow: none;
+        opacity: 1;
       }
 
       ul li div {
@@ -75,6 +80,7 @@ const PageHead = ({ title }) => (
         width: 30%;
         max-width: 30%;
         display: inline-block;
+        font-weight: bold;
       }
       ul li .model {
         width: 30%;
@@ -82,13 +88,24 @@ const PageHead = ({ title }) => (
         display: inline-block;
       }
       ul li .color {
-        width: 20%;
-        max-width: 20%;
+        width: 15%;
+        max-width: 15%;
         display: inline-block;
       }
+      ul li .swatch {
+        width: 10%;
+        max-width: 10%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      ul li .swatch .square {
+        width: 30px;
+        height: 30px;
+      }
       ul li .enteredAt {
-        width: 20%;
-        max-width: 20%;
+        width: 15%;
+        max-width: 15%;
         display: inline-block;
       }
     `}</style>
