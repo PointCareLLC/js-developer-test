@@ -2,7 +2,7 @@
 
 There are 25 cars parked in our imaginary parking lot and I want to know what they are. If I give you the manifest, can you create an express API to serve the data? Since we're on topic, a React view to fetch and display the manifest would sure bring a smile to my face, can you do that too?
 
-This purpose of this test is to help PointCare gauge your knowledge around out full-stack JavaScript development. The tasks touch on JavaScript, Node, HTTP, React, HTML, and CSS.
+This purpose of this test is to help PointCare gauge your knowledge around our full-stack JavaScript development. The tasks touch on JavaScript, Node, HTTP, React, HTML, and CSS.
 
 ## The Stack
 
@@ -57,6 +57,6 @@ The **back-end** is Express 4. Nothing special going here.
 
   Show us some style! Jazz up this manifest by adding some CSS.
 
-- [ ] **Keep out the bad guys**
+- [x] **Keep out the bad guys**
 
   We want to keep our users safe otherwise they will not trust us and our application. See if you can prevent a CSRF attack on your shiny new application. **Hint:** This can be accomplished without touching the client code.
